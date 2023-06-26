@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  background-origin: border-box;
+}
+
+body {
+    font-family:  'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* background-image: url(/img/a.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: auto; */
+    background-color: whitesmoke;
+}
+
+/* Navigation */
+
+header {  background: #f6f4ff;
+      position: fixed;
+
+}
+
+nav {
+  height: 80px;
+  width: 100%;
+  padding: 8px;
+}
+.logo {
+  color: black;
+  font-size: 40px;
+  line-height: 80px;
+  padding: 0 80px;
+  font-weight: bold;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: #ee4540;
+  font-size: 17px;
+  padding: 7px 13px;
+  /* border-radius: 20px; */
+ 
+}
+a.active, a:hover {
+  background-color: orangered;
+  color: #2d142c;
+  transition: .5s;
+}
+.checkbtn {
+  font-size: 30px;
+  color: #ee4540;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+
+
+/* Navigation  responsive */
+@media (max-width: 952px) {
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width:858px) {
+  .checkbtn{
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #510a32;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover, a.ctive {
+  background-color: #ee4540;
+  color: #2d142c;
+  transition: .5s;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+/* Navigation  Responsive */
+/* Navigation */
+
+/* Main */
+.container{
+  position: absolute;
+  top: 220px;
+  margin: 130px;
+}
+
+.btn1{
+  border: 1px solid #067eed;
+  border: collapse;
+  background: #067eed;
+  border-radius: 5px;
+  color: #2d142c;
+  margin-top: 30px;
+  padding: 10px;
+  font-weight: 500;
+}
+
+.btn1:hover {
+  background: #0e3854;
+  color: #ff7c1f;
+}
+
+/* Main */
+/* Footer Reponsive */
+
+footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* background: #2d142c; */
+  background: #0e3854;
+  height: auto;
+  width: 100vw;
+  padding: 15px;
+  color: #fff;
+  
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Footer Reponsive */

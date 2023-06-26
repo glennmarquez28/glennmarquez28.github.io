@@ -7,36 +7,28 @@
 }
 
 body {
-  font-family:  'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  /* background: linear-gradient(to bottom right, #2d142c, #510a32, #801336, #801336, #510a32, #2d142c);
-  height: 100%;
-  margin: 0;
-  background-repeat: no-repeat;
-  background-attachment: fixed; */
-    background-image: url(a.jpg);
+    font-family:  'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url(/img/a.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: auto;
     height: auto;
-
 }
 
 /* Navigation */
 
-/* #ee4540 #c72c41 #801336
-#510a32 #2d142c */
+header {  background: #f6f4ff;
 
-header {
-  background: #f6f4ff;
 }
+
 nav {
   height: 80px;
   width: 100%;
-  padding: 10px;
+  padding: 8px;
 }
 .logo {
   color: black;
-  font-size: 45px;
+  font-size: 40px;
   line-height: 80px;
   padding: 0 80px;
   font-weight: bold;
@@ -54,8 +46,8 @@ nav ul li a {
   color: #ee4540;
   font-size: 17px;
   padding: 7px 13px;
-  border-radius: 20px;
-  text-transform: uppercase; 
+  /* border-radius: 20px; */
+ 
 }
 a.active, a:hover {
   background-color: orangered;
@@ -63,17 +55,20 @@ a.active, a:hover {
   transition: .5s;
 }
 .checkbtn {
-   font-size: 30px;
-   color: #ee4540;
-   float: right;
-   line-height: 80px;
-   margin-right: 40px;
-   cursor: pointer;
-   display: none;
+  font-size: 30px;
+  color: #ee4540;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
 }
+
 #check {
   display: none;
 }
+
+
 
 /* Navigation  responsive */
 @media (max-width: 952px) {
@@ -120,6 +115,30 @@ a.active, a:hover {
 /* Navigation  Responsive */
 /* Navigation */
 
+/* Main */
+.container{
+  position: absolute;
+  top: 220px;
+  margin: 130px;
+}
+
+.btn1{
+  border: 1px solid #067eed;
+  border: collapse;
+  background: #067eed;
+  border-radius: 5px;
+  color: #2d142c;
+  margin-top: 30px;
+  padding: 10px;
+  font-weight: 500;
+}
+
+.btn1:hover {
+  background: #0e3854;
+  color: #ff7c1f;
+}
+
+/* Main */
 /* Footer Reponsive */
 
 footer{
@@ -127,12 +146,13 @@ footer{
   bottom: 0;
   left: 0;
   right: 0;
-  background: #2d142c;
+  /* background: #2d142c; */
+  background: #0e3854;
   height: auto;
   width: 100vw;
-
-  padding-top: 40px;
+  padding: 15px;
   color: #fff;
+  
 }
 .row{
   display: flex;
